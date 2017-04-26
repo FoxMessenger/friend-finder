@@ -10,7 +10,8 @@ path.resolve('../../public');
 
 module.exports = function(app) {
 	app.get('/', function(req, res) {
-		res.sendFile(path.join(__dirname, '/../../public/home.html'))
+		res.sendFile('home.html', {root: './public'});
+		// res.sendFile(path.join(__dirname, '/../../public/home.html'))
 	});
 
 	app.get('/survey', function(req, res) {
@@ -19,6 +20,6 @@ module.exports = function(app) {
 
 	// this is used to make an unknown page as default to index.html
 	app.use(function(req, res){
-		res.sendFile('/../../public/home.html');
+		res.sendFile('home.html', {root: './public'});
 	});
 };
