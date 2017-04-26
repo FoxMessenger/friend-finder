@@ -9,6 +9,15 @@ var path 		= require('path');
 var apiRoutes 	= require('./app/routing/apiRoutes')(app);
 var PORT 		= process.env.PORT || 3000;
 
+
+
+// app.use('/assets', express.static(__dirname + '/public'));
+app.use(express.static("/public"));
+// app.use(express.static('files'));
+// app.use('/static', express.static(path.join(__dirname, '/public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/assets',express.static(path.join(__dirname, '/public/assets')));
+
 // this is used to parse the JSON that comes in
 // used to access the body from the route callback/return
 // all these should be used, since we don't know how the json is coming back. These are all safety nets to each other
@@ -22,14 +31,6 @@ require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
 
-app.use('/assets', express.static(__dirname + '/public'));
-// app.use(express.static('/public'));
-// app.use(express.static('files'));
-// app.use('/static', express.static(path.join(__dirname, '/public')));
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.use('/assets',express.static(path.join(__dirname, '/public/assets')));
-// app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 // app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
 app.listen(PORT, function() {
