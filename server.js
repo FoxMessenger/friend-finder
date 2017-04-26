@@ -13,8 +13,8 @@ var PORT 		= process.env.PORT || 3000;
 
 // app.use('/assets', express.static(__dirname + '/public'));
 // app.use(express.static("/public/assets"));
-app.use(express.static('files'));
-app.use('/static', express.static(path.join(__dirname, '/public')));
+app.use(express.static('./public'));
+// app.use('/static', express.static(path.join(__dirname, '/public')));
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/assets',express.static(path.join(__dirname, '/public/assets')));
 
