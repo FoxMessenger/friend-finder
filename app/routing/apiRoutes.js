@@ -1,13 +1,30 @@
+// this may change to a mysql database if I have the time
+// ==========
+// DATA
+// ==========
+
+var friends = require('../data/friends');
+
+// ==========
+// ROUTING
+// ==========
 module.exports = function(app){
-	app.get('/survey', function(req, res){
-		res.json(survey);
+
+	app.get('/api/friends', function(req, res) {
+		res.json(friends);
 	});
-
-
-	// this is make an unknown page as default to index.html
-	app.get(function(req, res){
-		res.sendFile(path.join(__dirname, 'home.html'))
+	
+	app.post('/api/friends', function(req, res) {
+    
+	    if (friends.length < 5) {
+	    	tableData.push(req.body);
+	    	res.json(true);
+	    } else {
+			friends.push(req.body);
+			res.json(false);
+	    }
 	});
 
 }
+
 
