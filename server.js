@@ -10,12 +10,12 @@ var apiRoutes 	= require('./app/routing/apiRoutes')(app);
 var PORT 		= process.env.PORT || 3000;
 
 
+app.use(express.static('./public'));
 
 // app.use('/assets', express.static(__dirname + '/public'));
 // app.use(express.static("/public/assets"));
-app.use(express.static('./public'));
-// app.use('/static', express.static(path.join(__dirname, '/public')));
 // app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/static', express.static(path.join(__dirname, '/public')));
 // app.use('/assets',express.static(path.join(__dirname, '/public/assets')));
 
 // this is used to parse the JSON that comes in
