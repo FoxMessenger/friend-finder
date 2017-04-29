@@ -15,13 +15,11 @@ module.exports = function(app){
 	});
 	
 	app.post('/api/friends', function(req, res){
-	  console.log(req.body)
+	  friends.push(req.body);
+	  // res.json(body);
+	  res.send(req.body);
 	});
 
 
 }
 
-
-	  // var name = req.body.name;
-	  // var photo = req.body.photo;
-	  // var scores = req.body.scores;  
