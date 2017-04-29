@@ -38,12 +38,12 @@ module.exports = function(app){
 //========== Code I would use to check the submited scores versus the stored scores
 //==========
 
-		// res.scores.map(function(element){
-			// for loop
-			// for (i = 0; i < res.body.length ; i++) {
-				// req.body.scores.diff(res.body[i].scores);
-				// console.log(element);
-			// }
+		// friends[0]scores.map(function(element){
+		// 	// for loop
+		// 	for (i = 0; i < friends[0]scores.length ; i++) {
+		// 		friends[i].scores.diff(res.body[i].scores);
+		// 		console.log(element);
+		// 	}
 			// for (var value of req.body.scores) {
 				// compare score of each question in the database to the score of each question submited
 				// tally up the difference between each question
