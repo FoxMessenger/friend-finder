@@ -21,7 +21,7 @@ module.exports = function(app){
 
 
 
-	// I am unable to understand how to get the JSON scores from the response. The only output I can get are the ENTIRE response, the request object, and then undefined
+	// I am unable to understand how to get the JSON scores from the response. The only output I can get are: the ENTIRE response, the request object, and then undefined
 
 
 
