@@ -222,37 +222,31 @@
 		if (validateForm() == true)
 		{
 			// Create an object for the user's data
+			// userData comes up as null for me
 	    	var userData = {
 	    		name: $("#name").val(),
 	    		photo: $("#photo").val(),
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 	    	}
 
-
-	    	// Grab the URL of the website
-	    	// var currentURL = window.location.origin;
-
 	    	// AJAX post the data to the friends API. 
-	    	$.post(/*currentURL + */ "/api/friends", userData, function(data){
-	    		console.log('this is user data ' + JSON.stringify(userData));
-	    		console.log('this is data ' + data);
-	    		console.log('this is data name ' + userData.name);
-	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-	    			// var query = "SELECT name, photo FROM friend WHERE ?";
-    				// connection.query(query, ${name}, function(err, res) {
-      		// 			for (var i = 0; i < res.length; i++) {
-        // 				console.log("Position: " + res[i].position + " || Song: " + res[i].song + " || Year: " + res[i].year);
-      		// 			}
-      		// 		})
+	    	$.post("/api/friends", userData, function(data){
 
-	    		$("#matchName").text(userData.name);
-	    		$('#matchImg').attr("src", userData.photo);
+	    		console.log(userData);
+	    		// data is returning false
+	    		console.log(data);
+	    		
+	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+	    		$("#matchName").text(data.name);
+	    		$('#matchImg').attr("src", data.photo);
 
 		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
 
 	    	});
-		} else {
+		}
+		else
+		{
 			alert("Please fill out all fields before submitting!");
 		}
     	

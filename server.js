@@ -38,29 +38,6 @@ app.listen(PORT, function() {
 	console.log('App listening on PORT ' + PORT);
 });
 
-app.post('/api/friends', function(req, res) {
-		var friend = req.param.friends;
-		if (friend) {
-			connection.query("INSERT INTO friend VALUES ?", {
-		      userData
-		    }, function(err) {
-		      if (err) throw err;
-		      console.log("your data was entered!");
-		    });
-		    // console.log(friend);
-
-		    // for (var i = 0; i < friends.length; i++) {
-		    //   if (chosen === friends[i].name) {
-		    //     return res.json(friends[i]);
-		    //   }
-		    // }
-
-		    // return res.json(false);
-		}
-		  // return res.json(friends);
-});
-
-
 // this is to get the CSS files
 
 

@@ -22,4 +22,5 @@ module.exports = function(app) {
 	app.use(function(req, res){
 		res.sendFile('home.html', {root: './public'});
 	});
+
 };
