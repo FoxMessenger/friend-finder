@@ -29,6 +29,15 @@ module.exports = function(app){
 
 	  	console.log(res.body);
 	  	console.log(req.body);
+	//	{ name: 'Name',
+ 	//	  photo: 'Namer',
+  	//	 'scores[]': [ '2', '3', '1', '1', '3', '1', '3', '2', '2', '1' ] 
+  	//  }
+	
+
+//========== Code I would use to check the submited scores versus the stored scores
+//==========
+
 		// res.scores.map(function(element){
 			// for loop
 			// for (i = 0; i < res.body.length ; i++) {
