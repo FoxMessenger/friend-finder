@@ -13,20 +13,14 @@ var mysql		= require('mysql');
 
 app.use(express.static('./public'));
 
-// app.use('/assets', express.static(__dirname + '/public'));
-// app.use(express.static("/public/assets"));
-// app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/static', express.static(path.join(__dirname, '/public')));
-// app.use('/assets',express.static(path.join(__dirname, '/public/assets')));
-
 // this is used to parse the JSON that comes in
 // used to access the body from the route callback/return
 // all these should be used, since we don't know how the json is coming back. These are all safety nets to each other
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.text());
-app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.text());
+// app.use(bodyParser.json());
+// app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 
 require('./app/routing/apiRoutes')(app);
