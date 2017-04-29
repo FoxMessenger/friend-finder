@@ -8,6 +8,7 @@ var app 		= express();
 var path 		= require('path');
 var apiRoutes 	= require('./app/routing/apiRoutes')(app);
 var PORT 		= process.env.PORT || 3000;
+var mysql = require('mysql');
 
 
 app.use(express.static('./public'));
@@ -37,13 +38,34 @@ app.listen(PORT, function() {
 	console.log('App listening on PORT ' + PORT);
 });
 
+app.post('/api/friends', function(req, res) {
+		var friend = req.param.friends;
+		if (friend) {
+			connection.query("INSERT INTO friend VALUES ?", {
+		      userData
+		    }, function(err) {
+		      if (err) throw err;
+		      console.log("your data was entered!");
+		    });
+		    // console.log(friend);
+
+		    // for (var i = 0; i < friends.length; i++) {
+		    //   if (chosen === friends[i].name) {
+		    //     return res.json(friends[i]);
+		    //   }
+		    // }
+
+		    // return res.json(false);
+		}
+		  // return res.json(friends);
+});
 
 
 // this is to get the CSS files
 
 
 
-// var mysql = require('mysql');
+
 // var connection = mysql.createConnection({
 //   host: "localhost",
 //   user: "root",

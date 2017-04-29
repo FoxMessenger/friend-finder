@@ -17,7 +17,7 @@ var friends = [
 	},
 	{
 	  "name":"Amy",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/a4/6e/c0/a46ec09eb7bb7b6f1de78852e09a600a.jpg",
 	  "scores":[
 	      3,
 	      2,
@@ -32,24 +32,24 @@ var friends = [
 	    ]
 	},
 	{
-		  "name":"Cassadin",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+		  "name":"The #2",
+	  "photo":"http://himg2.huanqiu.com/attachment2010/2014/1105/20141105042615652.jpg",
 	  "scores":[
-	      5,
-	      4,
-	      2,
-	      1,
-	      1,
-	      3,
 	      2,
 	      2,
-	      1,
-	      1
+	      2,
+	      2,
+	      2,
+	      2,
+	      2,
+	      2,
+	      2,
+	      2
 	    ]
 	},
 	{
 	  "name":"Jackson",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+	  "photo":"https://s-media-cache-ak0.pinimg.com/originals/8f/5a/79/8f5a7900d46210c149b139c7c0f68d03.jpg",
 	  "scores":[
 	      4,
 	      4,
@@ -65,7 +65,7 @@ var friends = [
 	},
 	{	  
 	  "name":"Ryzen",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+	  "photo":"http://freshwallpapers.info/uploads/posts/2016-04/22_matt_bomer.jpg",
 	  "scores":[
 	      1,
 	      1,
@@ -81,7 +81,7 @@ var friends = [
 	},
 	{
 	  "name":"Kumagai",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+	  "photo":"https://myndishafer.files.wordpress.com/2013/01/nf-headshot.jpg",
 	  "scores":[
 	      5,
 	      1,
@@ -97,7 +97,7 @@ var friends = [
 	},
 	{
 	  "name":"Claire",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/736x/37/f9/b9/37f9b969250d443068fb04495d8a81f8.jpg",
+	  "photo":"http://i2.wp.com/www.mrlancechung.com/wp-content/uploads/2016/02/Bay-St.-Bull-Lance-Chung-Meghan-Markle-6.jpg",
 	  "scores":[
 	      2,
 	      5,
