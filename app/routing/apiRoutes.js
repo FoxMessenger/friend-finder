@@ -15,13 +15,13 @@ module.exports = function(app){
 	});
 	
 	app.post('/api/friends', function(req, res){
-		var obj = {};
-		// console.log('this ran')
-		console.log('body: ' + JSON.stringify(req.body));
-		res.send(req.body);
+	  console.log(req.body)
 	});
 
 
 }
 
 
+	  // var name = req.body.name;
+	  // var photo = req.body.photo;
+	  // var scores = req.body.scores;  
