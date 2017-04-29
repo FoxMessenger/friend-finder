@@ -15,9 +15,38 @@ module.exports = function(app){
 	});
 	
 	app.post('/api/friends', function(req, res){
-	  friends.push(req.body);
-	  // res.json(body);
-	  res.send(req.body);
+	  
+	  	// compare the input of the survey with the friends json arrays
+
+
+
+
+	// I am unable to understand how to get the JSON scores from the response. The only output I can get are the ENTIRE response, the request object, and then undefined
+
+
+
+
+
+	  	console.log(res.body);
+	  	console.log(req.body);
+		// res.scores.map(function(element){
+			// for loop
+			// for (i = 0; i < res.body.length ; i++) {
+				// req.body.scores.diff(res.body[i].scores);
+				// console.log(element);
+			// }
+			// for (var value of req.body.scores) {
+				// compare score of each question in the database to the score of each question submited
+				// tally up the difference between each question
+				// add that score
+				// push that score to an array
+				// lowest scoring person wins match
+			// }
+		// })
+
+		res.send(req.body);
+		friends.push(req.body);
+
 	});
 
 
