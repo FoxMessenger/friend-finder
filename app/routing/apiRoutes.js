@@ -27,7 +27,7 @@ module.exports = function(app){
 
 
 
-	  	console.log(res.body);
+	  	console.log(friends);
 	  	console.log(req.body);
 	//	{ name: 'Name',
  	//	  photo: 'Namer',
